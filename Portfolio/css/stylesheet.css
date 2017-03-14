@@ -1,0 +1,312 @@
+body{
+  font-family: "proxima nova light", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+}
+
+h1{
+  font-size:60px;
+}
+
+h3{
+  font-size:25px;
+}
+
+hr{
+  position:absolute;
+  text-align:center; margin: 0 auto;
+  background-color: grey;
+  height:2px;
+  width:80%;
+  margin-left:10%;
+  margin-top:14%;
+}
+
+.header_others{
+  position:relative;
+  width:100%;
+  height:100%;
+  background-color:#F5FFFA;
+}
+
+.job_holder{
+  position:relative;
+}
+
+.company_logo img{
+  width:5%;
+  height:3%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#experience_content{
+  position:relative;
+  height:200%;
+  width:100%;
+    background: red; /* For browsers that do not support gradients */
+   background: -webkit-linear-gradient(red, yellow); /* For Safari 5.1 to 6.0 */
+   background: -o-linear-gradient(red, yellow); /* For Opera 11.1 to 12.0 */
+   background: -moz-linear-gradient(red, yellow); /* For Firefox 3.6 to 15 */
+   background: linear-gradient(#F5FFFA, #FFFFF0); /* Standard syntax (must be last) */
+}
+#experience_picture{
+  position: absolute;
+  width:40%;
+  height:65%;
+  right:7%;
+  top:20%;
+  -webkit-animation-delay: 1.1s;
+}
+
+#experience_picture img{
+  position: absolute;
+  width:100%;
+  height:100%;
+}
+
+#section1{
+  background-image: url(image/background.png);
+  width: 100%;
+  height: 100%;
+  background-size:cover;
+  position: relative;
+}
+
+.footer{
+  background-color:white;
+  width:100%;
+  height:8%;
+  margin-top: 30px;
+}
+
+.footer img{
+  position:relative;
+  width:40px;
+  height:40px;
+  left:48%;
+}
+
+#myCarousel {
+  position: relative;
+}
+
+#myCarousel a{
+  background-image: none;
+}
+
+#myCarousel img{
+  width: 40px;
+  height:40px;
+  top: 50%;
+  left: 35%;
+  position:absolute;
+}
+
+.carousel-inner{
+  width:100%;
+  height:100%;
+}
+
+.carousel-indicators li{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-top: 10px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #000\9;
+  background-color: rgba(0,0,0,0);
+  border: 1px solid #c26969;
+  border-radius: 10px;
+}
+.carousel-indicators .active{
+  width: 12px;
+  height: 12px;
+  margin: 0;
+  background-color: #b1b1b1;
+}
+
+#carousel-inner h2{
+  position:absolute;
+  padding-top:30px;
+}
+
+#skillSet{
+  position: relative;
+  top: 13%;
+  width: 70%;
+  height: 70%;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#backEnd{
+  top: 50%;
+}
+
+#database{
+  left: 33.33%;
+}
+
+#python{
+  left: 33.33%;
+  top:50%;
+}
+
+#frontEnd{
+  left: 66.66%;
+}
+
+#others{
+  left: 66.66%;
+  top:50%;
+}
+
+#java, #frontEnd, #python,#database, #backEnd, #others{
+  position: absolute;
+  height:50%;
+  width:33.33%;
+  z-index: 3;
+}
+
+#java, #frontEnd, #python{
+  background-color:rgb(46, 65, 122);
+}
+
+#database, #backEnd, #others{
+  background-color: #BEC9DC;
+}
+
+#java_detail, #frontEnd_detail, #python_detail, #database_detail{
+    position:absolute;
+    height:50%;
+    width:33.33%;
+    display:none;
+}
+
+#java_detail{
+  background-color: #BEC9DC;
+}
+
+#frontEnd_detail{
+  background-color: #BEC9DC;
+}
+
+#python_detail{
+  background-color: #BEC9DC;
+}
+
+#database_detail{
+  background-color: yellow;
+}
+
+#section2{
+  width: 100%;
+  height: 120%;
+  background-color: #EDEFF5;
+
+}
+
+#title{
+  font-size: 70px;
+  color: white;
+  text-align: center;
+  padding-top: 180px;
+}
+
+#selfie{
+  position:absolute;
+  width: 100px;
+  height:100px;
+  bottom:-0px;
+  right:50%;
+  z-index: 1;
+}
+#subTitle{
+  font-size: 30px;
+  color: grey;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.iconImage{
+  width: 40px;
+  height:40px;
+  margin-left: 15px
+}
+
+#indexBar{
+  height: 13%;
+ /*background: red; /* For browsers that do not support gradients */
+ background: -webkit-linear-gradient(red, yellow); /* For Safari 5.1 to 6.0 */
+ background: -o-linear-gradient(red, yellow); /* For Opera 11.1 to 12.0 */
+ background: -moz-linear-gradient(red, yellow); /* For Firefox 3.6 to 15 */
+ background: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,0.8)); /* Standard syntax (must be last) */
+  opacity: 0.8;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+.indexBar_others{
+  height: 13%;
+  background-color:black;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+.section_title{
+  position:relative;
+  margin-left: 7%;
+  margin-top:10%;
+}
+#experience_describe{
+  position:relative;
+  margin-left:12%;
+  margin-top:3%;
+  width:40%;
+  -webkit-animation-delay: 0.8s;
+}
+#iconnn{
+  width: 20%;
+  color: white;
+  float: right;
+}
+
+#sectionLink{
+width: 50%;
+color: white;
+font-size: 20px;
+padding-left: 5%;
+float: left;
+}
+
+#sectionLink a {
+  font-size: 20px;
+  text-decoration: none;
+  padding: 15px;
+  /*background-color: #286090;*/
+  color: white;
+  letter-spacing: 1.4px;
+  transition: all 0.25s ease-in-out;
+}
+
+#nameLink{
+width: 20%;
+color: white;
+font-size: 20px;
+padding-left: 5%;
+float: left;
+}
+
+#nameLink a{
+  word-spacing: 10px;
+  color:white;
+  text-decoration:none;
+  letter-spacing: 2px;
+  font: Arial;
+  font-weight: 900;
+}
