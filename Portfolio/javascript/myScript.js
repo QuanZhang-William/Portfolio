@@ -7,7 +7,7 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-    $(".holder").mousehover(function(){
+    $(".holder").hover(function(){
     	console.log($(this).attr('id'));
       $(this).children().fadeToggle("fast");
     });

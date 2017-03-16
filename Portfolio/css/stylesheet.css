@@ -31,11 +31,24 @@ hr{
   position:relative;
 }
 
+.company_logo{
+  vertical-align: top;
+  float: left;
+  margin-top: 3%;
+  width: 20%;
+  position: relative;
+}
 .company_logo img{
-  width:5%;
   height:3%;
   display: inline-block;
   vertical-align: top;
+  padding-left:50%;
+}
+
+.job_description{
+  margin-top: 3%;
+  width: 80%;
+  float:right;
 }
 
 #experience_content{
@@ -102,6 +115,7 @@ hr{
 }
 
 .carousel-inner{
+  position: relative;
   width:100%;
   height:100%;
 }
@@ -130,9 +144,16 @@ hr{
   padding-top:30px;
 }
 
+.carousel_title{
+
+  margin-left:5%;
+  margin-top:5%;
+  text-decoration: underline;
+}
+
 #skillSet{
   position: relative;
-  margin-top:11%;
+  margin-top:4%;
   width: 70%;
   height: 70%;
   text-align: center;
