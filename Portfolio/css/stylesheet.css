@@ -26,6 +26,26 @@ hr{
   margin-left:10%;
 }
 
+.latest_update{
+  color:red;
+  font-weight: 700;
+  animation-duration: 5s;
+}
+
+#about_me{
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  position: relative;
+  margin-top:9%;
+  width: 60%;
+  height: 70%;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
 .header_others{
   position:relative;
   width:100%;
@@ -150,7 +170,7 @@ hr{
   background-image: none;
 }
 
-#myCarousel img{
+.scroller{
   width: 40px;
   height:40px;
   top: 50%;
@@ -186,13 +206,16 @@ hr{
 #carousel-inner h2{
   position:absolute;
   padding-top:30px;
+
 }
 
 .carousel_title{
 
   margin-left:5%;
   margin-top:5%;
-  text-decoration: underline;
+  display:inline-block;
+  border-left: 5px solid yellow;
+
 }
 
 #skillSet{
@@ -203,6 +226,18 @@ hr{
   text-align: center;
   margin-right: auto;
   margin-left: auto;
+}
+
+.abstract p{
+    color: white;
+    font-size: 35px;
+    margin-top: 30%;
+    text-align: center;
+}
+
+.level_indicator{
+  height:25px;
+  width:25px;
 }
 
 #backEnd{
@@ -231,45 +266,111 @@ hr{
   position: absolute;
   height:50%;
   width:33.33%;
-  z-index: 3;
 }
+
 
 #java, #frontEnd, #python{
   background-color:rgb(46, 65, 122);
+}
+
+#java p, #frontEnd p, #python p{
+  margin-left:30%;
+  margin-right:30%;
+  border-bottom: 5px solid red;
 }
 
 #database, #backEnd, #others{
   background-color: #BEC9DC;
 }
 
-#java_detail, #frontEnd_detail, #python_detail, #database_detail{
+#database p, #backEnd p, #others p{
+  color: #404040;
+  margin-left:30%;
+  margin-right:30%;
+  border-bottom: 5px solid red;
+}
+
+#java_detail, #frontEnd_detail, #python_detail, #database_detail, #backEnd_detail, #others_detail{
     position:absolute;
     height:50%;
     width:33.33%;
     display:none;
 }
 
+#java_detail ul, #frontEnd_detail ul, #python_detail ul, #database_detail ul, #backEnd_detail ul, #others_detail ul{
+  margin-top: 20%;
+  margin-bottom: 20%;
+}
+
 #java_detail{
-  background-color: #BEC9DC;
+  background-color: #cdcdb1;
+  background: linear-gradient(to bottom, rgba(46, 65, 122,0.5), rgba(46, 65, 122,0.8)); /*Standard*/
 }
 
 #frontEnd_detail{
   background-color: #BEC9DC;
+  background: linear-gradient(to bottom, rgba(46, 65, 122,0.5), rgba(46, 65, 122,0.8)); /*Standard*/
+  left: 66.66%;
 }
 
 #python_detail{
   background-color: #BEC9DC;
+  background: linear-gradient(to bottom, rgba(46, 65, 122,0.5), rgba(46, 65, 122,0.8)); /*Standard*/
+  left: 33.33%;
+  top: 50%;
 }
 
 #database_detail{
-  background-color: yellow;
+  background: linear-gradient(to bottom, rgba(190, 201, 220,0.1), rgba(190, 201, 220,0.9)); /*Standard*/
+  left: 33.33%;
+}
+
+#backEnd_detail{
+  background: linear-gradient(to bottom, rgba(190, 201, 220,0.1), rgba(190, 201, 220,0.9)); /*Standard*/
+  top: 50%;
+}
+
+#others_detail{
+  background: linear-gradient(to bottom, rgba(190, 201, 220,0.1), rgba(190, 201, 220,0.9)); /*Standard*/
+  top: 50%;
+  left:66.66%;
+}
+
+
+.first_item{
+  font-size: 27px;
+  color: #ff3333;
+  -webkit-animation-delay: 0.4s;
+}
+.second_item{
+    font-size: 20px;
+    color: #ff0000;
+    -webkit-animation-delay: 0.6s;
+}
+.third_item{
+    font-size: 25px;
+    color: #ff0000;
+    -webkit-animation-delay: 0.8s;
+}
+.forth_item{
+    color: #ff0000;
+    -webkit-animation-delay: 1.0s;
+}
+.fifth_item{
+    font-size: 25px;
+    color: #ff0000;
+    -webkit-animation-delay: 1.2s;
+}
+
+.level_holder{
+  margin-top: 20%;
 }
 
 #section2{
   width: 100%;
   height: 120%;
   background-color: #EDEFF5;
-
+  position:relative;
 }
 
 #title{
@@ -300,14 +401,12 @@ hr{
   margin-left: 15px
 }
 
-#indexBar{
-  height: 13%;
+.indexBar{
  /*background: red; /* For browsers that do not support gradients */
  background: -webkit-linear-gradient(red, yellow); /* For Safari 5.1 to 6.0 */
  background: -o-linear-gradient(red, yellow); /* For Opera 11.1 to 12.0 */
  background: -moz-linear-gradient(red, yellow); /* For Firefox 3.6 to 15 */
  background: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,0.8)); /* Standard syntax (must be last) */
-  opacity: 0.8;
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -315,7 +414,7 @@ hr{
 }
 
 .indexBar_others{
-  height: 13%;
+
   background-color:black;
   width: 100%;
   overflow: hidden;
@@ -323,10 +422,20 @@ hr{
   text-align: center;
 }
 
+.indexBar_others div, .indexBar div{
+  margin-top:1%;
+  margin-bottom:1%;
+}
+
+.indexbar a:hover{
+  border-bottom: 2px solid #618673;
+}
+
 .section_title{
   position:relative;
   margin-left: 7%;
   margin-top:10%;
+
 }
 #experience_describe{
   position:relative;
@@ -345,8 +454,9 @@ hr{
 width: 50%;
 color: white;
 font-size: 20px;
-padding-left: 5%;
+padding-left: 10%;
 float: left;
+margin-top: 1.5%;
 }
 
 #sectionLink a {
@@ -362,7 +472,7 @@ float: left;
 #nameLink{
 width: 20%;
 color: white;
-font-size: 20px;
+font-size: 30px;
 padding-left: 5%;
 float: left;
 }
@@ -372,6 +482,4 @@ float: left;
   color:white;
   text-decoration:none;
   letter-spacing: 2px;
-  font: Arial;
-  font-weight: 900;
 }
