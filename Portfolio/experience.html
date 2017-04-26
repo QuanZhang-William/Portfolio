@@ -27,13 +27,19 @@
     </div>
     <h1 class="section_title animated bounceInLeft">Experience</h1>
     <h3 id="experience_describe" class="animated bounceInLeft"> As a student in UWaterloo Engineering, I have 6 coop experience and a couple other experiences!</h3>
+    <div class="navigation_list">
+        <a id ="nav1" class="nav_1 nav" href="experience.html#job1">Software Developer at SAP</a>
+        <a id ="nav2" class="nav_2 nav" href="experience.html#job2">Java Developer at AGFA Healthcare</a>
+        <a id ="nav3" class="nav_3 nav" href="experience.html#job3">QA Developer at Good Technology (BlackBerry)</a>
+        <a id ="nav4" class="nav_4 nav" href="experience.html#job4">SQL Developer at ScotiaBank</a>
+    </div>
     <div id="experience_picture" class="animated bounceInDown">
         <img src="image/wow.jpg" class="bounceInLeft">
     </div>
   </div>
   <div id="experience_content">
     <hr>
-    <div class="job_holder">
+    <div class="job_holder" id="job1">
       <div class="company_logo">
         <img src="image/SAP-Logo.png"></img>
       </div>
@@ -43,12 +49,13 @@
         <ul class="job_detail">
           <li>Full-Stack Web Development: Developed Developer Web Console for the product - Dynamic Edge Processing(DEP). The client side of the website is based on SAP UI5, which is a MVC based framework. And backend is a node.js server. Tasks included creating a new webpage for configuring local plugins, implementing new UI requirements, creating web services/apis and fixing generic web bugs </li>
           <li>Created/Update database tables, stored procedures, triggers, views in SQL Anywhere(a database used in SAP) to support APIs in web backend and the "IOT Adapter Engine". </li>
-          <li>Java Development: The "IOT Adapter Engine" is a java program used to parse and route data reading inputs from different protocal and source to corresponding enterprise or edge end points</li>
+          <li>Java Development: The "IOT Adapter Engine" is a java program used to parse and route data reading inputs from different sources to corresponding enterprise or edge end points</li>
           <li>Python Script Development: Created "ESP Silent Install" script to silently install ESP. ESP is a real-time data streaming project in DEP. All install options are hard coded and user is able to specify insatll path. </li>
         </ul>
+        <input class="eval_button" type="button" onclick="location.href='https://www.youtube.com/watch?v=mOPVMrRyb1E';" value="Official Work Term Evaluation"/>
       </div>
     </div>
-    <hr class="list_bar">
+    <hr class="list_bar" id="job2">
     <div class="job_holder">
         <div class="company_logo">
           <img src="image/AGFA.png"></img>
@@ -62,14 +69,15 @@
               storing, retrieving data. Advanced functions like data sharing; merging and modifying data are
               also covered.</li>
             <li>JMX Utility Tool Implementation: Got involved in STUI implemented. STUI is a command
-              line utility tool written in Java to manipulate JXM Attributes</li>
-            <li>General Artifact Fixing and Function Implementation: Wrote Java code to fix assigned
+              line utility tool written in Java to manipulate JXM Attributes. Applied knowledge of visitor design pattern in this project. Also learnt Eclipse Remote Debugging feature (which is really cool)</li>
+            <li>General Artifact Fixing and Function Implementation: Wrote Java, html, css, javascript code to fix assigned
               artifacts or new function implementation.</li>
             <li>Agile Development method; Code review; All tasks are performed in Linux VM</li>
           </ul>
+          <input class="eval_button" type="button" onclick="location.href='https://www.youtube.com/watch?v=mOPVMrRyb1E';" value="Official Work Term Evaluation"/>
         </div>
     </div>
-    <hr class="list_bar">
+    <hr class="list_bar" id="job3">
     <div class="job_holder">
       <div class="company_logo">
         <img src="image/Good Technology.png"></img>
@@ -78,18 +86,17 @@
         <b class="job_title">QA Developer</b>
         <p class="date">(2014/09 - 2014/12)</p>
         <ul class="job_detail">
+          <li>This is the first project I got involved at enterprise level</li>
           <li>Android App Development: Designed and developed Mobile Device Management (MDM)
-            Automation-Test Application. The application tests automatically whether a specific device
-            has been controlled properly from the server side. The test results will be automatically
-            uploaded to JIRA.</li>
-          <li>Manual Testing: Performed manual tests in JIRA; Worked on test cases and user stories;
-            Reported bugs and closed bugs tickets</li>
+            Automation-Test Application.The app is able to scan the settings applied in a smart device and parse data to server. The server reads the actual value from devices, expected value from JIRA and do the comparison. The test results will be automatically uploaded back to JIRA.</li>
+          <li>Manual Testing: Performed manual tests in MDM; Worked on test cases and user stories; Reported bugs and closed bugs tickets. Learnt various testing method like unit test, regression test and so on</li>
         </ul>
+        <input class="eval_button" type="button" onclick="location.href='https://www.youtube.com/watch?v=mOPVMrRyb1E';" value="Official Work Term Evaluation"/>
       </div>
     </div>
     <hr class="list_bar">
 
-    <div class="job_holder">
+    <div class="job_holder" id="job4">
       <div class="company_logo">
         <img src="image/scotiabank.png"></img>
       </div>
@@ -101,7 +108,9 @@
             discuss, analyze and document the business needs of the "SuccessFactor".</li>
           <li>Automation: Created automation-testing scripts for the project. The automation was done in
             HPQTP. The scripts were written in VBA.</li>
+          <li>Manual Testing and documentation: Documented configuration book based on user stories and requirement. Also created concrete test cases according to the requirement book.</li>
         </ul>
+        <input class="eval_button" type="button" onclick="location.href='https://www.youtube.com/watch?v=mOPVMrRyb1E';" value="Official Work Term Evaluation"/>        
       </div>
     </div>
     <hr class="list_bar">

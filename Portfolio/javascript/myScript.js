@@ -1,7 +1,10 @@
 $(document).ready(function(){
-  $("#go_up_icon").on("click", function(){
+  $(".nav").on("click", function(){
+  	var id = $(this).attr('id');
+  	var target = "#job" + id.charAt(3);
+  	console.log(target);
     $('html, body').animate({
-      scrollTop: $("#section1").offset().top
+      scrollTop: $(target).offset().top
   }, 1000);
   });
 });
