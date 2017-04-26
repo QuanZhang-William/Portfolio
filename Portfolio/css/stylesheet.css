@@ -380,6 +380,22 @@ hr{
   left:66.66%;
 }
 
+.nav_1{
+   -webkit-animation-delay: 1.6s;
+}
+
+.nav_2{
+   -webkit-animation-delay: 1.7s;
+}
+
+.nav_3{
+   -webkit-animation-delay: 1.8s;
+}
+
+.nav_4{
+   -webkit-animation-delay: 1.9s;
+}
+
 
 .first_item{
   font-size: 27px;
