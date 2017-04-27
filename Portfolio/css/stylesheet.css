@@ -115,7 +115,7 @@ hr{
 }
 
 .company_logo img{
-  height:3%;
+  height:40px;
   display: inline-block;
   vertical-align: top;
   padding-left:50%;
@@ -141,7 +141,6 @@ hr{
 
 #experience_content{
   position:relative;
-  height:200%;
   width:100%;
     background: red; /* For browsers that do not support gradients */
    background: -webkit-linear-gradient(red, yellow); /* For Safari 5.1 to 6.0 */
@@ -530,7 +529,6 @@ margin-top: 1.5%;
 }
 
 #nameLink{
-width: 20%;
 color: white;
 font-size: 30px;
 padding-left: 5%;
