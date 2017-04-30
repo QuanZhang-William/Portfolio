@@ -16,20 +16,95 @@
       <div id="sectionLink">
           <a href="index.html"> About</a>
           <a href="experience.html"> Experience</a>
-          <a href="http://www.google.ca"> Project</a>
-          <a href="http://www.google.ca"> Contact</a>
+          <a href="Project.html"> Project</a>
+          <a href="contact.html"> Contact</a>
       </div>
-      <div id="iconnn">
-        <img class= "iconImage" src="image/github-logo-icon-30.png">
-        <img class= "iconImage" src="image/resume.png">
-        <img class= "iconImage" src="image/linkedin-512.png">
-      </div>
+        <div id="iconnn">
+          <a href="https://github.com/QuanZhang-William">
+            <img class= "iconImage" src="image/github-logo-icon-30.png">
+          </a>
+          <img class= "iconImage" src="image/resume.png">
+          <a href="https://www.linkedin.com/in/william-zhang-165b84a2/?ppe=1">
+            <img class= "iconImage" src="image/linkedin-512.png">
+          </a>
+        </div>
     </div>
-    <h1 class="section_title animated bounceInLeft">Experience</h1>
-    <h3 id="experience_describe" class="animated bounceInLeft"> As a student in UWaterloo Engineering, I have 6 coop experience and a couple other experiences!</h3>
-    <div id="experience_picture" class="animated bounceInDown">
-        <img src="image/wow.jpg" class="bounceInLeft">
+    <h1 class="section_title animated bounceInLeft">Projects</h1>
+    <h3 id="experience_describe" class="animated bounceInLeft"> Here is a list of major and interesting projects I works on, some of them are school projects...</h3>
+    <div id="project_picture" class="animated bounceInDown">
+        <img src="image/bigImage.jpg" class="bounceInLeft">
+    </div>
+
+      <div class="navigation_list">
+        <a id ="nav1" class="animated bounceInDown nav_1 project_nav" href="Project.html#project1">Android Step Counter & Navigation App</a>
+        <a id ="nav2" class="animated bounceInDown nav_2 project_nav" href="Project.html#project2">Driver of Speakers in FAT file system</a>
+        <a id ="nav3" class="animated bounceInDown nav_3 project_nav" href="Project.html#project3">Arduino Parking Assistance System</a>
+        <a id ="nav4" class="animated bounceInDown nav_4 project_nav" href="Project.html#project4">Portfolio Website</a>
     </div>
   </div>
+  <div class="detail_content">
+    <hr>
+    <div class="job_holder" id="project1">
+      <div class="company_logo">
+        <img src="image/ANDROID.png"></img>
+      </div>
+      <div class="job_description">
+        <b class="job_title">Step Counter  Navigation App (Android)</b>
+
+        <ul class="job_detail">
+          <li>Used finite state machine, low-pass filter to filter out noise from sensor and to improve accuracy </li>
+          <li>The app contains step counter feature which uses acceleration sensor to detect change of grativity chnage in movement </li>
+          <li>Read a given map (in special format provided by professor). Utilized Android magnetic sensor to detect orientation. User is able to set a destination and the shortest path will be displayed. User's position is displayed on map as well.</li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <div class="job_holder" id="project2">
+      <div class="company_logo">
+        <img src="image/fpgaLOGO4.gif"></img>
+      </div>
+      <div class="job_description">
+        <b class="job_title">Driver of Speakers in FAT file system</b>
+        <ul class="job_detail">
+          <li>C Programming in FPGA Board</li>
+          <li>Read a sound file (.wav file) in SD Card; Buffer the data and send to a connected speaker. </li>
+          <li>The playback mode can be controlled in FPGA board (reverse, double speed, delay, half speed, normal)</li>
+          <li>Applied lower-level knowledge in software and hardware programming including advance data structer, concept of polling and interrupt and FPGA programming </li>
+        </ul>
+        <input class="eval_button" type="button" onclick="location.href='files/ECE224 Report.pdf';" value="Project Report"/>
+      </div>
+    </div>
+    <hr>
+    <div class="job_holder" id="project3">
+      <div class="company_logo">
+        <img src="image/arduino.png"></img>
+      </div>
+      <div class="job_description">
+        <b class="job_title">Arduino Parking Assistance System</b>
+        <ul class="job_detail">
+          <li>A small Arduino project using distance sensor, LED display screen and potentiometer</li>
+          <li>This project uses distance sensor to detect the distance between obstacle and the system. The result is displayed on a LED display screen. A red warning LED will light up if the obstacle is too close to the system. User is also able to adjust the lightness of warning LED via a potentiometer. </li>
+          <li>Also implemented a Java program to talk to arduino via serial connection. Readings from arduino is streamed to the Java program through the connection which is then directed and stored in database by using JDBC.</li>
+        </ul>
+        <input class="eval_button" type="button" onclick="location.href='https://github.com/QuanZhang-William/Arduino-Parking-Assistance';" value="Github Link"/>
+      </div>
+    </div>
+    <hr>
+    <div class="job_holder" id="project4">
+      <div class="company_logo">
+        <img src="image/websiteLogo.jpeg"></img>
+      </div>
+      <div class="job_description">
+        <b class="job_title">Portfolio Website</b>
+        <ul class="job_detail">
+          <li>A personal website demonstrating my full experience and related projects </li>
+          <li>This project demonstrates my skills in HTML/CSS, javascript and Node.js</li>
+        </ul>
+        <input class="eval_button" type="button" onclick="location.href='https://github.com/QuanZhang-William/Portfolio';" value="Github Link"/>
+      </div>
+    </div>
+
+  </div>
+
 </body>
 </html>

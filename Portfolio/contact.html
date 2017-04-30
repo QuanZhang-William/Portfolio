@@ -1,0 +1,67 @@
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel = "stylesheet" type = "text/css" href="css/animate.css">
+  <script src="javascript/myScript.js"></script>
+  <link rel = "stylesheet" type = "text/css" href="css/stylesheet.css">
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script><script>// <![CDATA[
+  $(document).ready(function(){
+      var from,to,subject,text;
+      $("#send_email").click(function(){
+        console.log("ere");
+          to=$("#to").val();
+          subject=$("#subject").val();
+          text=$("#content").val();
+          $("#message").text("Sending Message...Please wait");
+          $.get("http://localhost:3000/send",{to:to,subject:subject,text:text},function(data){
+          if(data=="sent")
+          {
+              $("#message").empty().html("I have received your message! Thanks!!");
+          }
+
+  });
+      });
+  });
+  </script>
+
+
+</head>
+<body>
+  <div class="contact_others">
+    <div class="indexBar_others">
+      <div id ="nameLink">
+        <a href="http://www.google.ca"> William Zhang</a>
+      </div>
+      <div id="sectionLink">
+          <a href="index.html"> About</a>
+          <a href="experience.html"> Experience</a>
+          <a href="Project.html"> Project</a>
+          <a href="contact.html"> Contact</a>
+      </div>
+        <div id="iconnn">
+          <a href="https://github.com/QuanZhang-William">
+            <img class= "iconImage" src="image/github-logo-icon-30.png">
+          </a>
+          <img class= "iconImage" src="image/resume.png">
+          <a href="https://www.linkedin.com/in/william-zhang-165b84a2/?ppe=1">
+            <img class= "iconImage" src="image/linkedin-512.png">
+          </a>
+        </div>
+    </div>
+    <div id="contact_form">
+      <br><br>
+      <p>subject</p>
+      <input id="subject" class="input_field" type="text" name="subject" value="subject">
+      <br><br>
+      <p>Messgae</p>
+      <textarea id="content" class="input_field" name="message" rows="10" cols="30">Please leave your comments and messgae here</textarea>
+      <br><br><br>
+      <button class="animated infinite pulse" id="send_email">Contact Me!</button>
+      <p id="message"></p>
+    </div>
+  </div>
+</body>
+</html>
