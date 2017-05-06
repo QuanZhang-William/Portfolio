@@ -16,7 +16,7 @@
           subject=$("#subject").val();
           text=$("#content").val();
           $("#message").text("Sending Message...Please wait");
-          $.get("http://localhost:3000/send",{to:to,subject:subject,text:text},function(data){
+          $.get("http://http://www.williamzhang.website:3000/send",{to:to,subject:subject,text:text},function(data){
           if(data=="sent")
           {
               $("#message").empty().html("I have received your message! Thanks!!");
