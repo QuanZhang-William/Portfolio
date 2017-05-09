@@ -9,14 +9,15 @@
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script><script>// <![CDATA[
   $(document).ready(function(){
-      var from,to,subject,text;
+      var from,to,subject,text,email;
       $("#send_email").click(function(){
         console.log("ere");
           to=$("#to").val();
+          email=$("#email").val();
           subject=$("#subject").val();
           text=$("#content").val();
           $("#message").text("Sending Message...Please wait");
-          $.get("http://http://www.williamzhang.website:3000/send",{to:to,subject:subject,text:text},function(data){
+          $.get("http://http://www.williamzhang.website:3000/send",{to:to,subject:subject,text:text,email:email},function(data){
           if(data=="sent")
           {
               $("#message").empty().html("I have received your message! Thanks!!");
@@ -54,6 +55,9 @@
         </div>
     </div>
     <div id="contact_form">
+      <br><br>
+      <p>Email</p>
+      <input id="email" class="input_field" type="text" name="Email" value="Please enter your email address">
       <br><br>
       <p>Subject</p>
       <input id="subject" class="input_field" type="text" name="subject" value="subject">

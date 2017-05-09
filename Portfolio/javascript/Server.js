@@ -15,15 +15,12 @@ var smtpTransport = nodemailer.createTransport({
     }
 });
 
-app.get('/',function(req,res){
-res.sendFile(path.resolve('../contact.html'));
-});
 
 app.get('/send',function(req,res){
     var mailOptions={
         to : 'zjjhzq950826@gmail.com',
         subject : req.query.subject,
-        text : req.query.text
+        text : req.query.text + "  from" + req.query.email
     }
     console.log(mailOptions);
     smtpTransport.sendMail(mailOptions, function(error, response){
