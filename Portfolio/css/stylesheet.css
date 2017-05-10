@@ -76,7 +76,6 @@ hr{
 .header_others{
   position:relative;
   width:100%;
-  height:100%;
   background-color:#F5FFFA;
 }
 
@@ -93,6 +92,7 @@ hr{
 .navigation_list{
   margin-top:5%;
   margin-left:15%;
+  padding-bottom: 5%;
 }
 
 .navigation_list a{
@@ -203,7 +203,7 @@ hr{
 #experience_picture{
   position: absolute;
   width:40%;
-  height:65%;
+  height:76%;
   right:7%;
   top:20%;
   -webkit-animation-delay: 1.1s;
@@ -569,8 +569,8 @@ hr{
 
 .section_title{
   position:relative;
-  margin-left: 7%;
-  margin-top:10%;
+  margin-left: 10%;
+  margin-top:6%;
 
 }
 #experience_describe{
